@@ -1,0 +1,24 @@
+{
+  "name": "calcu-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webdriverio-calcu": "mocha webdriverio-calcu.js --reporter mochawesome --reporter-options reportDir=customReportDir,reportFilename=customReportFilename --timeout 15000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "appium-uiautomator2-driver": "^1.23.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0",
+    "wd": "^1.11.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^3.1.1",
+    "wdio-appium-service": "^0.2.3",
+    "wdio-mocha-framework": "^0.6.4",
+    "webdriverio": "^4.14.0"
+  }
+}
