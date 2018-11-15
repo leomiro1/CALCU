@@ -10,19 +10,19 @@ var client = webdriverio.remote(config);
 describe('CALCU Testing', function () {
 
     before(function () {
-        this.timeout(50000);
+        this.timeout(100000);
         return client.init();
     });
 
     afterEach(function(){
-        this.timeout(15000);
+        this.timeout(30000);
         return client.click('android=new UiSelector().resourceId("com.candl.athena:id/clear")');
     });
 	
 	//addition testing
 	describe("Test CALCU addition", function () {
         
-		this.timeout(15000);
+		this.timeout(30000);
         
 		it("test-close-startup-screen", function(){
             return client.click('android=new UiSelector().resourceId("com.candl.athena:id/btn_close")');
@@ -74,7 +74,7 @@ describe('CALCU Testing', function () {
 	//multiplication testing
     describe("Test CALCU multiplication", function () {
         
-		this.timeout(15000);
+		this.timeout(30000);
         
 		it("test-positive-multiplication", function () {
             return client.click('android=new UiSelector().resourceId("com.candl.athena:id/digit5")')
@@ -136,7 +136,7 @@ describe('CALCU Testing', function () {
     //division testing
     describe("Test CALCU division", function () {
         
-		this.timeout(15000);
+		this.timeout(30000);
         
 		it("test-divide-even",function(){
             return client.click('android=new UiSelector().resourceId("com.candl.athena:id/digit6")')
@@ -212,7 +212,7 @@ describe('CALCU Testing', function () {
     //advanced testing
     describe("Test CALCU advanced", function(){
         
-		this.timeout(90000);
+		this.timeout(150000);
         
 		it("test-advanced",function(){
             return client
