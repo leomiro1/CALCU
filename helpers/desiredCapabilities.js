@@ -1,12 +1,12 @@
 exports.options = {
 	desiredCapabilities: {
 		platformName: 'android',
-		platformVersion: '6.0.1',
+		platformVersion: '9',
 		appPackage: 'com.candl.athena',
 		appActivity: 'com.candl.athena.activity.Calculator',
-		automationName: 'appium',
+		automationName: 'uiautomator2',
 		avdReadyTimeout: '2000',
-		deviceName: '05157df585ae292e',
+		deviceName: 'emulator-5554',
 	},
 	host: 'localhost',
 	port: 4723
